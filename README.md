@@ -15,8 +15,8 @@ The Attention Mechanism is a crucial component in many state-of-the-art NLP mode
 To get started, clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/attention-nlp.git
-cd attention-nlp
+git clone https://github.com/yourusername/attention-pytorch.git
+cd attention-pytorch
 pip install -r requirements.txt
 ```
 
