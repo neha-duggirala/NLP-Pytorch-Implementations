@@ -1,4 +1,4 @@
-from preprocess_stock_data import process_apple_data
+from stock_price_prediction.preprocess_stock_data import process_apple_data
 from rnn import StocksRnn
 import torch.optim as optim
 import torch
