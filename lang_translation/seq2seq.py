@@ -1,8 +1,4 @@
 import torch
-# Removed unused and unresolved import of bleu_score
-from torch.utils.data import DataLoader, Dataset
-import random
-
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
@@ -49,7 +45,7 @@ class Seq2Seq(nn.Module):
         batch_size = trg.shape[1]
         trg_vocab_size = self.decoder.fc_out.out_features
 
-        outputs = torch.zeros(trg_len, batch_size, trg_vocab_size).to(self.device)
+        outputs = torch.zeros(trg_len, batch_size, trg_vocab_size).t o(self.device)
         hidden, cell = self.encoder(src)
 
         input = trg[0, :]
